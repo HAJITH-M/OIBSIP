@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url('Pacifico-Regular.ttf') format('truetype'); /* Adjust the path accordingly */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('LibreBaskerville-Regular.ttf') format('truetype'); /* Adjust the path accordingly */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+body {
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container {
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+
+  .jumbotron {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  .card {
+    margin: 20px 0;
+  }
+
+/* About Me Section */
+#about {
+  margin-top: 5rem;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 2rem;
+}
+
+#about .img-fluid {
+  border: 5px solid #80dbff;
+  border-radius: 20px !important;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+
+
+#about p {
+  font-size: 1.25rem;
+  color: #555;
+  margin: auto;
+}
+.abt-us{
+  margin: auto !important;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+   /* Custom CSS for the Skills section */
+   .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-card {
+    margin: 15px;
+    width: 18rem;
+  }
+
+
+
+ /* Custom CSS for the Portfolio section */
+ .portfolio-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  margin: 15px;
+  width: 100%; /* Full width by default */
+}
+
+@media (min-width: 576px) {
+  .project-card {
+    width: calc(50% - 30px); /* Two cards in a row for small screens and above */
+  }
+}
+
+@media (min-width: 992px) {
+  .project-card {
+    width: calc(33.33% - 30px); /* Three cards in a row for large screens */
+  }
+}
+
+
+
+
+
+  /* Custom CSS for the Education section */
+  .education-section {
+    margin-top: 50px;
+  }
+
+  .education-card {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .education-card .card-body {
+    padding: 20px;
+  }
+
+  .education-card h5 {
+    color: #007bff;
+  }
+
+  .education-card p {
+    margin-bottom: 5px;
+  }
+
+  /* Glassmorphism Effect */
+  .education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+
+
+
+
+
+   /* Custom CSS for the Skills section */
+   .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-card {
+    margin: 15px;
+    width: 300px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .skill-card:hover {
+    transform: scale(1.05);
+  }
+
+  .skill-card .card-body {
+    padding: 20px;
+  }
+
+  .skill-card h5 {
+    color: #007bff;
+  }
+
+  .progress {
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    background-color: #007bff;
+  }
+
+  /* Custom animation for progress bars */
+  @keyframes animateProgress {
+    from {
+      width: 0;
+    }
+  }
+
+  .progress-bar-striped.progress-bar-animated {
+    animation: animateProgress 1.5s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+    /* Custom CSS for the Portfolio section */
+    .portfolio-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+    }
+
+    .project-card {
+      margin: 15px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .project-card .card-body {
+      padding: 20px;
+    }
+
+    .project-card h5 {
+      color: #007bff;
+    }
+
+
+
+
+     /* Custom CSS for the Certificates section */
+     .certificates-section {
+      margin-top: 50px;
+    }
+
+    .certificate-card {
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.05);
+    }
+
+    .certificate-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .certificate-card .card-body {
+      padding: 20px;
+    }
+
+    .certificate-card h5 {
+      color: #28a745; /* Green color for certificates */
+    }
+
+
+
+/* Custom CSS for the Contact section */
+.contact-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  color: #007bff;
+  font-weight: bold;
+  display: block;
+  text-align: left; /* Align labels to the left */
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary-container {
+  text-align: left; /* Align the button to the left */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+.pdf-content {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}

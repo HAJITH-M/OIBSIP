@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
+</head>
+<body>
+  <div id="contentWrapper">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="sha_designz-logo.jpeg" width="50" height="50" alt="">
+    </a>
+    <a class="navbar-brand" href="#" style="font-family: 'Pacifico', cursive; font-size: x-large;">Sha_Designz</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skill">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="jumbotron text-center">
+    <h1 style="font-size: 50px; font-family: 'Libre Baskerville', serif;" class="display-4">Mohamed Hajith.M</h1>
+    <p class="lead" style="font-family: 'Libre Baskerville', serif;">Web Developer | Designer</p>
+  </div>
+
+
+
+   <!-- About Me Section -->
+   <section id="about" class="container">
+    <br><h2 style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;" class="text-center mb-4">About Me</h2>
+    <div class="row">
+      <!-- Image Column -->
+      <div class="col-md-4">
+        <img src="WhatsApp Image 2023-10-14 at 1.49.46 PM.jpeg" class="img-fluid rounded-circle" alt="Profile Image">
+      </div>
+
+      <!-- Details Column -->
+      <div class="col-md-8 abt-us">
+        <br><p>
+          Hi, I'm <span style="font-size:xx-large; color:darkred; font-weight: 600; font-family: 'Times New Roman', Times, serif;"> Mohamed Hajith.M </span>, a passionate web developer with a strong background in computer science.
+          I specialize in front-end and back-end development, creating responsive and user-friendly web applications.
+          I am dedicated to continuous learning and staying updated with the latest technologies in the ever-evolving field of web development.
+        <br><br>
+          <button id="downloadButton" class="btn btn-primary">Download as PDF</button>
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- skill section -->
+  <div id="skill" class="container mt-5">
+    <h2 class="text-center mb-4" style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Skills</h2>
+
+    <div class="skills-section">
+      <!-- Skill Card 1 -->
+      <div class="card skill-card">
+        <div class="card-body">
+          <h6 class="card-title">Web Development</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Card 2 -->
+      <div class="card skill-card">
+        <div class="card-body">
+          <h6 class="card-title">Programming Languages</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Card 3 -->
+      <div class="card skill-card">
+        <div class="card-body">
+          <h class="card-title">Database Management</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+<!-- education-section -->
+  
+  <div id="education" class="container education-section">
+    <h2 style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Education</h2>
+  
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">Bachelor's Degree in Computer Science</h5>
+            <p class="card-text">University of Example</p>
+            <p class="card-text">Graduation Year: 2020</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="col-md-6">
+        <div class="card education-card">
+          <div class="card-body">
+            <h5 class="card-title">High School Diploma</h5>
+            <p class="card-text">Example High School</p>
+            <p class="card-text">Graduation Year: 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- portfolio-section -->
+  <div id="portfolio" class="container mt-5">
+    <h2 class="text-center mb-4" style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Portfolio</h2>
+
+    <div class="portfolio-section">
+      <!-- Project Card 1 -->
+      <div class="card project-card">
+        <img src="html-css-logo.jpg" class="card-img-top" alt="Project 1 Image">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text">Description of Project 1.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="card project-card">
+        <img src="figma.png" class="card-img-top" alt="Project 2 Image">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">Description of Project 2.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="card project-card">
+        <img src="angular-ar21.png" class="card-img-top" alt="Project 3 Image">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">Description of Project 3.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<!-- achievements -->
+
+  <div id="achievements"  class="container certificates-section">
+    <h2 class="text-center mb-4" style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Achievements</h2>
+
+    <div class="card-deck">
+      <!-- Certificate Card 1 -->
+      <div class="card certificate-card">
+        <img src="certificate.webp" class="card-img-top" alt="Certificate 1 Image">
+        <div class="card-body">
+          <h5 class="card-title">Certificate 1</h5>
+          <p class="card-text">Description of Certificate 1.</p>
+        </div>
+      </div>
+
+      <!-- Certificate Card 2 -->
+      <div class="card certificate-card">
+        <img src="certificate.webp" class="card-img-top" alt="Certificate 2 Image">
+        <div class="card-body">
+          <h5 class="card-title">Certificate 2</h5>
+          <p class="card-text">Description of Certificate 2.</p>
+        </div>
+      </div>
+
+      <!-- Certificate Card 3 -->
+      <div class="card certificate-card">
+        <img src="certificate.webp" class="card-img-top" alt="Certificate 3 Image">
+        <div class="card-body">
+          <h5 class="card-title">Certificate 3</h5>
+          <p class="card-text">Description of Certificate 3.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="contact" class="container mt-5">
+    <h2 class="text-center mb-4" style="color: black; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Contact</h2>
+
+    <div class="row contact-section">
+      <div class="col-md-6 mx-auto">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="btn-primary-container">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function () {
+      console.log('Button clicked');
+      var element = document.getElementById('contentWrapper');
+      console.log('Element:', element);
+  
+      // Create a wrapper element to isolate the content for PDF generation
+      var wrapper = document.createElement('div');
+      wrapper.appendChild(element.cloneNode(true));
+  
+      // Add the .pdf-content class for PDF generation styling
+      wrapper.classList.add('pdf-content');
+  
+      // Append the wrapper to the document body
+      document.body.appendChild(wrapper);
+  
+      // Wait for the content to be fully loaded
+      html2pdf(wrapper, {
+        margin: 10, // Adjust as needed, specify a single margin value
+        filename: 'portfolio.pdf',
+        html2canvas: { scale: 3 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      }).then(() => {
+        // The PDF generation is complete
+  
+        // Remove the wrapper element after generating the PDF
+        document.body.removeChild(wrapper);
+      }).catch(error => {
+        console.error('Error generating PDF:', error);
+  
+        // Remove the wrapper element in case of an error
+        document.body.removeChild(wrapper);
+      });
+    });
+  </script>
+  
+  
+  
+  
+
+</body>
+</html>
